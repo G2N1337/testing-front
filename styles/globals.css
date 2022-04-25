@@ -1,0 +1,28 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	text-align: center;
+}
+
+.SubmitButton:hover {
+	background: linear-gradient(to right, rgb(2, 138, 42) 50%, transparent 0);
+	background-size: 200% 100%;
+	background-position: right;
+	animation: makeItfadeIn 0.2s 0.1s forwards;
+}
+@keyframes makeItfadeIn {
+	100% {
+		background-position: left;
+	}
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}

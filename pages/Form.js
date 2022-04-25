@@ -1,6 +1,3 @@
-import React, { useState, useEffect } from 'react';
-
-import './App.css';
 import Box from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import FormControl from '@mui/material/FormControl';
@@ -11,8 +8,9 @@ import Alert from '@mui/material/Alert';
 import { IMaskInput } from 'react-imask';
 
 import axios from 'axios';
+import { forwardRef, useState, useEffect } from 'react';
 
-const TextMaskCustom = React.forwardRef(function TextMaskCustom(props, ref) {
+const TextMaskCustom = forwardRef(function TextMaskCustom(props, ref) {
 	const { onChange, ...other } = props;
 	return (
 		<IMaskInput
