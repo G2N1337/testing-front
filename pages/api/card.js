@@ -6,8 +6,6 @@ export default async function handler(req, res) {
 
 	await dbConnect();
 	switch (method) {
-		case 'GET':
-			res.status(200).json({ lol: 'lol' });
 		case 'POST':
 			let cardExists = await Card.findOne({ cardNumber });
 			console.log(cardNumber);
