@@ -166,7 +166,7 @@ const CreditForm = () => {
 								console.log('success');
 								setError(undefined);
 								axios
-									.post('http://localhost:3000/card', {
+									.post('http://localhost:3000/api/card', {
 										cardNumber: cardNumber,
 										cvv: cvv,
 										date: date,
